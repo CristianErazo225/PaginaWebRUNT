@@ -1,18 +1,23 @@
 @charset "UTF-8";
 
-#logotipo{
+.Contenedor{ /*Color de fondo de la pagina*/
+    background-color: rgb(228, 228, 228);
+}
+
+#logotipo{ /*Dimension Logotipo*/
     width: 150px;
 }
 
-.carousel-inner{
+.carousel-inner{ /*Borde redondo Carrusel de imagenes*/
     border-radius: 5px;
 }
 
-#Tarjetas{
+#Tarjetas{  /*Propiedades de las tarjetas con imagenes*/
     border-radius: 10px;
+    color: rgb(0, 0, 0);
 }
 
-.IconRedes{
+.IconRedes{  /*Ancho y margenes de iconos de redes*/
     width: 30px;
     margin: 15px 5px;
 }
@@ -55,4 +60,15 @@ footer p{
 
 .acordeon{
     color: rgb(89, 168, 214);
+    background-color: blue;
+}
+
+
+#Login{ /*Estilo a la pestaña Ingresar*/
+    border-radius: 10px;
+    background-color: rgb(217, 217, 217);
+    
+}
+#ContenedorBotones{
+    width: 500px;
 }

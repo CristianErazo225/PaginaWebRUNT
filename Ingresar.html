@@ -20,8 +20,8 @@
 </head>
 <body>
 
-  <div class="Contenedor"> <!--Color de fondo de la pagina-->
-              <!---------------------------------------------------MENU------------------------------------------------------>
+  <div class="Contenedor">
+            <!---------------------------------------------------MENU------------------------------------------------------>
             <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
               <div class="container-fluid">
                 <a class="navbar-brand" href="#"><img id="logotipo" src="imag/lg2.png" alt=""></a> <!--Logotipo-->
@@ -34,8 +34,8 @@
                       <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="Ingresar.html">Ingresar</a>
-                    </li>
+                        <a class="nav-link" href="Ingresar.html">Ingresar</a>
+                      </li>
                     <li class="nav-item">
                       <a class="nav-link" href="runt.html">Inscripcion RUNT</a>
                     </li>
@@ -58,67 +58,36 @@
               </div>
             </nav><br><br><br>
             <!---------------------------------------------------MENU------------------------------------------------------>  
-
-          <!---------------------------------------------------Carrusel------------------------------------------------------>
-          <br><div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="imag/Carrusel3.png" class="d-block w-100" alt="Slide 01">
+        <!---------------------------------------------------LOGIN------------------------------------------------------>  
+        <br><br><div class="container">
+            <form id="Login">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Dirección de Email</label>
+                  <input type="email" class="form-control" id="ContenedorBotones" aria-describedby="emailHelp" placeholder="JuanPerez@gmail.com">
+                  <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
                 </div>
-                <div class="carousel-item">
-                  <img src="imag/Carrusel2.png" class="d-block w-100" alt="Slide 02">
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label">Ingrese su Contraseña</label>
+                  <input type="password" class="form-control" id="ContenedorBotones">
                 </div>
-                <div class="carousel-item">
-                  <img src="imag/Carrusel1.png" class="d-block w-100" alt="Slide 03">
+                <div class="mb-3 form-check">
+                  <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                  <label class="form-check-label" for="exampleCheck1">Terminos y Condiciones</label>
                 </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-          <!---------------------------------------------------Carrusel------------------------------------------------------> 
-          
-          <!---------------------------------------------------Tarjetas------------------------------------------------------>
-          <br><main>
-              <section>
-                  <div class="container">
-                      <div class="row">
-                          <div class="col-12 col-sm-4 text-center">
-                              <img id="Tarjetas" class="img-fluid shadow-lg" src="imag/EConductor.png" alt="">
-                              <h5 id="Tarjetas">Historico del Conductor</h5>
-                              <p id="Tarjetas">Obtenga informacion detallada de un conductor.</p>
-                          </div>
-                          <div class="col-12 col-sm-4 text-center">
-                            <img id="Tarjetas" class="img-fluid shadow-lg" src="imag/AD.png" alt="">
-                            <h5 id="Tarjetas">Actualización de Datos en el RUNT</h5>
-                            <p id="Tarjetas">Actualice sus datos de notificación de <br>forma ágil y en linea.</p>
-                        </div>
-                        <div class="col-12 col-sm-4 text-center">
-                            <img id="Tarjetas" class="img-fluid shadow-lg" src="imag/HV.png" alt="">
-                            <h5 id="Tarjetas">Historico Vehicular</h5>
-                            <p id="Tarjetas">Obtenga informacion en detalle de cualquier <br>vehiculo en pocos minutos y a un click.</p>
-                        </div>
-                      </div>
-                  </div>
+                <button type="submit" class="btn btn-outline-primary">Aceptar</button>
+                <button type="reset" class="btn btn-outline-primary">Limpiar</button><br>
+            </form>
+        </div><br>
+        <!---------------------------------------------------LOGIN------------------------------------------------------>
 
-                  
-              </section>
+        <div class="spinner-grow" role="status">
+            <span class="visually-hidden">Loading...</span>
+        </div>
 
-              <section class="banner-video">
-                  <a href="https://www.youtube.com/watch?v=tM57_Dl9ZYw">
-                      <img src="imag/youtube.png" alt="Play">
-                  </a>
-              </section>
-          </main>
-          
-          
-        <!---------------------------------------------------Tarjetas------------------------------------------------------>
-
+    
+        
+        
+        
         <footer>
           <img id="logotipo-footer" src="imag/lg2.png" alt="">
           <br>
@@ -132,10 +101,7 @@
             2009 - 2023, Registro Único Nacional de Tránsito
           </p>
         </footer>
-  </div>
-    
 
-
-
+       
 </body>
 </html>
