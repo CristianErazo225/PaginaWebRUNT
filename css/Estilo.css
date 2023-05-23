@@ -1,0 +1,58 @@
+@charset "UTF-8";
+
+#logotipo{
+    width: 150px;
+}
+
+.carousel-inner{
+    border-radius: 5px;
+}
+
+#Tarjetas{
+    border-radius: 10px;
+}
+
+.IconRedes{
+    width: 30px;
+    margin: 15px 5px;
+}
+
+.banner-video{
+    background-image: url("../imag/videoBanner.png");
+    padding: 200px 0px;
+    position: relative;
+    text-align: center;
+    border-radius: 5px;
+    
+}
+.banner-video img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+    
+}
+
+.card{
+    width: 90px;
+    background-color: rgb(241, 84, 84);
+}
+
+footer{
+    background-color: #222020;
+    padding: 40px 0px;
+    text-align: center;
+}
+
+footer .logotipo-footer{
+    width: 1550px;
+    margin-bottom: 10px;
+    
+}
+
+footer p{
+    color: azure;
+}
+
+.acordeon{
+    color: rgb(89, 168, 214);
+}

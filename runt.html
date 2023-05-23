@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro Unico Nacional de Transito</title>
+    <link rel="stylesheet" type="text/css" href="css/EstiloFormulario.css"> 
+     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"><!--archivo de estilos css-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous">     
+    </script><!--archivo popper-->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script><!--achivo javascript-->
+
+    <!--Estilo Css-->
+    <link rel="stylesheet" href="css/Estilo.css">
+
+</head>
+<body>
+    <!---------------------------------------------------MENU------------------------------------------------------>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img id="logotipo" src="imag/lg2.png" alt=""></a> <!--Logotipo-->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="runt.html">Inscripcion RUNT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Normativa.html">Normativa</a>
+              </li>
+              
+            </ul>
+            <li> <!--Redes Sociales-->
+              <img class="IconRedes" src="imag/youtube.png" alt="Youtube">
+              <img class="IconRedes" src="imag/facebook.png" alt="Facebook">
+              <img class="IconRedes" src="imag/instagram.png" alt="Instagram">
+              <img class="IconRedes" src="imag/gorjeo.png" alt="Twitter">
+            </li>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+          </div>
+        </div>
+      </nav><br><br><br><br>
+      <!---------------------------------------------------MENU------------------------------------------------------>  
+
+        <form id="formulario">
+            <table border="4" id="tabla1">
+                <tr>
+                    <th rowspan="2" ><img src="imag/RUNT.png" width="386" height="130"> </th>
+                    <th colspan="20" ><br><br>REGISTRO UNICO NACIONAL DE TRANSITO <br><br> </th>
+                    <th rowspan="2" ><img src="imag/Transporte.png" width="300" height="70"> </th>
+                </tr>
+                <tr>
+                    <th colspan="6" rowspan="2"><br>REGISTRO AUTOMOTORES<br> <br></th>
+                </tr>
+
+            </table>
+        
+            <table border="4" id="tabla2">
+                </tr>
+                    <!------------------------------------------- 1.SECCION ------------------------------------------------->
+                    <td colspan="20" id="IP">
+                        <label for="seccion1" id="seccion" >1. INFORMACIÓN PERSONAL </label> 
+                    </td>
+            
+                    <tr>
+                        <td id="IP" >
+                        <label for="nombre" >Primer Nombre </label>
+                        <input type="text" id="Nombre1" name="" 
+                        placeholder="Escriba su nombre">   
+            
+                        <label for="nombre" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Segundo Nombre </label>
+                        <input type="text" id="Nombre1" name="" 
+                        placeholder="Escriba su nombre"> <br>  
+                        </td> 
+                    </tr>
+            
+                    <tr>
+                        <td id="IP" >
+                        <label for="nombre" >Primer Apellido </label>
+                        <input type="text" id="Apellido1" name="" 
+                        placeholder="Escriba su Apellido">   
+            
+                        <label for="nombre" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Segundo Apellido </label>
+                        <input type="text" id="Apellido1" name="" 
+                        placeholder="Escriba su Apellido"> <br>  
+                        </td> 
+                    </tr>
+            
+                    <tr>
+                        <td id="IP" >
+                            <label for="edad" >Edad </label>
+                            <input type="number" id="edad" min="1" max="100">          
+            
+                            <label for="fecha_nac" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fecha Nac </label>
+                            <input type="date" id="fecha_nac">
+            
+                            <label >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Genero :  </label>                                   
+                            <label for="F" >Femenino </label>
+                            <input type="radio" id="F" name="Genero">  
+                            <label for="M" >Masculino </label>
+                            <input type="radio" id="M" name="Genero"><br>
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td colspan="10" id="IP" >
+                            Tipo de Documento:  
+                            <select id="TDocumento" >
+                                <option disabled selected>Escoja una opcion</option>
+                                <option>Cedula de Ciudadania</option>
+                                <option>Cedula de Extrangeria</option>
+                                <option>NIT</option>
+                                <option>Pasaporte</option>
+                                <option>Registro Civil</option>
+                                <option>Tarjeta de Identidad</option>
+                            </select>
+
+                            <label for="edad" >No. de Documento </label>
+                            <input type="number" id="Documento">  
+                        </td>
+                    </tr>
+            
+                    <tr>
+                        <td id="IP" >
+                            <label for="Correo" >Correo Electronico:</label>
+                            <input type="email" id="Correo" min="1" max="100"
+                            placeholder="JuanCarlos223@gmail.com"> 
+                            
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td id="IP" >
+                            <label for="ciudad" >Ciudad </label>
+                            <input type="text" id="Ciudad" name="" 
+                            placeholder="Ciudad de Residencia"> 
+                            
+                            <label for="Municipio" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Municipio </label>
+                            <input type="text" id="Municipio" name="" 
+                            placeholder="Municipio de Residencia"> 
+
+                            <label for="Departamento" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Departamento </label>
+                            <input type="text" id="Departamento" name="" 
+                            placeholder="Municipio de Residencia"> 
+                        
+                        </td>
+                    </tr>
+
+                    <!------------------------------------------- 2.SECCION ------------------------------------------------->
+                    <td colspan="20" id="RV" >
+                        <label for="seccion1" id="seccion" >2. REGISTRO VEHICULO </label> 
+                    </td>
+
+                    <tr>
+                        <td colspan="10" id="RV" >
+                            Clase de vehiculo:  
+                            <select id="CDvehiculo">
+                                <option disabled selected>Escoja una opcion</option>
+                                <option>Motocicleta</option>
+                                <option>Automovil</option>
+                                
+                            </select>
+
+                            <label for="Placa del Vehiculo:" >Placa del Vehiculo: </label>
+                            <input type="text" id="Placa"
+                            placeholder="BWQ28Q">  
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td colspan="10" id="RV" >
+                            Tipo de servicio:  
+                            <select id="CDvehiculo">
+                                <option selected>Particular</option>
+                                <option>Publico</option>
+                                
+                            </select>
+
+                            <label for="Marca" > &nbsp&nbsp&nbsp&nbsp Marca:</label>
+                            <input type="text" id="Marca">  
+
+                            <label for="Modelo" > &nbsp&nbsp&nbsp Modelo:</label>
+                            <input type="number" id="Modelo"
+                            placeholder="            Ej: 2023">  
+                        </td>
+                    </tr>
+                        <td id="RV" >
+                            <label for="Cilindraje" >Cilindraje:</label>
+                            <input type="number" id="Cilindraje" placeholder="Ej: 125 c.c"> 
+                            
+                            Tipo combustible:  
+                            <select id="CDvehiculo">
+                                <option selected>Gasolina</option>
+                                <option>Electrico</option>
+                            </select>
+                        </td>
+                    <tr>
+                    <!------------------------------------------- 3.SECCION ------------------------------------------------->
+                    <td colspan="20" id="PS" >
+                        <label for="seccion1" id="seccion" >3. POLIZA SOAT</label> 
+                    </td>
+                    
+                    <tr>
+                        <td id="PS" ><label for="EntidadSOAT" >Entidad que expide SOAT: </label>
+                            <input type="text" > 
+                        
+                            <label for="Poliza" >Numero de Poliza:: </label>
+                                <input type="number" >  
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td id="PS" >
+                            <label for="fecha_nac" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fecha inicio vigencia</label>
+                            <input type="date" id="fecha_nac" >
+
+                            <label for="fecha_nac" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fecha fin vigencia</label>
+                            <input type="date" id="fecha_nac">
+
+                            <label for="Poliza" >Codigo Tarifa: </label>
+                            <input type="number" id="edad" min="1" max="300">  
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td id="PS" >
+                        <label for="Archivo" >Certificado SOAT </label>
+                            <input type="File" id="Archivo"><br> 
+                        </td>
+                    </tr>
+                    <!------------------------------------------- 4.SECCION ------------------------------------------------->
+                    <td colspan="20" id="CEG" >
+                        <label for="seccion1" id="seccion" >4. CERTIFICADO DE EMISIONES DE GASES</label> 
+                    </td>
+
+                    <tr>
+                        <td id="CEG" >
+                            <label for="fecha_nac" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fecha de Prueba</label>
+                            <input type="date" id="fecha" >
+
+                            <label for="fecha_nac" >&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Fecha fin vigencia</label>
+                            <input type="date" id="fecha_nac">
+        
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td id="CEG" >
+                            <label for="Archivo" >Certificado de emisiones </label>
+                            <input type="File" id="Archivo"><br> 
+                        </td>
+                    </tr>
+            
+                <tr>
+
+                    <tr>
+                        <td  id="CEG" >
+                            <label>Sugerencias: </label>
+                        </td>
+                    </tr>
+                    <th id="CEG" >
+                        
+                        <textarea cols="107" rows="3">
+                    
+                        </textarea><br>
+
+                        <button type="reset"> 
+                            Limpiar
+                        </button><br>
+                    </th>
+
+                    <tr id="CEG" >
+                        <td>
+                            <button type="submit"> <!--Enviar-->
+                                Enviar Registro
+                            </button><br>
+                        </td>
+                    </tr>
+
+
+            </table>
+                
+        </form><br>
+
+        <footer>
+            <img id="logotipo-footer" src="imag/lg2.png" alt="">
+            <br>
+            <img class="IconRedes" src="imag/youtube.png" alt="Youtube">
+            <img class="IconRedes" src="imag/facebook.png" alt="Facebook">
+            <img class="IconRedes" src="imag/instagram.png" alt="Instagram">
+            <img class="IconRedes" src="imag/gorjeo.png" alt="Twitter">
+          
+            <p>
+              Glosario | Glosario de Siglas | Términos & Condiciones | Políticas de Privacidad | Tratamiento de datos personales<br>
+              2009 - 2023, Registro Único Nacional de Tránsito
+            </p>
+          </footer>
+    
+    
+</body>
+</html>
